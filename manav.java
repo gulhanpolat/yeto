@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class manav {
     public static void main(String[] args) {
-        double armut= 2;
-        float elma = 3,67;
-        double domates = 1,11;
-        double muz = 0,95;
-        double patlican =5,00;
+        double armut= 2.14;
+        double elma = 3.67;
+        double domates = 1.11;
+        double muz = 0.95;
+        double patlican =5.00;
         Scanner input = new Scanner(System.in);
         System.out.println("armut kaç kilo? :");
         double kgA = input.nextInt();
@@ -22,6 +22,8 @@ public class manav {
         Scanner input5 = new Scanner(System.in);
         System.out.println("patlıcan kaç kilo");
         double kgP = input5.nextInt();
+        double toplam = kgA* armut+ kgE* elma + kgD* domates+ kgM* muz+ kgP* patlican;
+        System.out.println("toplam tutar:"+toplam);
 
     }
 }
